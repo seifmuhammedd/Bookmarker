@@ -20,7 +20,7 @@ function displayBookmarks () {
     for ( i = 0 ; i < bookmarksList.length ; i++) {
         holder += `
         <tr>
-                    <td>${i}</td>
+                    <td>${i+1}</td>
                     <td>${bookmarksList[i].name}</td>
                     <td><a href="${bookmarksList[i].url}" target="_blank" class="btn btn-1 text-white fw-semibold"><i class="fa-solid fa-eye"></i> Visit</a></td>
                     <td><a class="btn btn-2 text-white fw-semibold" onclick="deleteBookmark(${i})"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
